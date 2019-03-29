@@ -5,5 +5,6 @@ from .import views
 app_name='website'
 urlpatterns=[
 
-    path('',views.Home,name='home')
+    path('',views.Home,name='home'),
+    path('test',views.db,name='test')
 ]

@@ -1,0 +1,25 @@
+
+{%block content%}
+<h1 class="h2">List Of Current FDs</h1>
+<div class="table-responsive">
+  <table class="table table-striped table-sm">
+    <thead>
+      <tr>
+        <th>ticketId</th>
+
+      </tr>
+    </thead>
+    <tbody>
+
+{%for i in data%}
+  <tr>
+    <td>{{i.ticketid}}</td>
+
+  </tr>
+
+{%endfor%}
+
+</tbody>
+</table>
+</div>
+{%endblock%}
