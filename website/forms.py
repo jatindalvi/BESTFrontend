@@ -1,7 +1,10 @@
 from django import forms
 
-class routeForm(forms.ModelForm):
-    route=forms.IntegerField()
+class RouteForm(forms.Form):
+    route_number=forms.IntegerField()
 
+class StartForm(forms.Form):
+    start_name=forms.CharField()
 
-    
+class CostForm(forms.Form):
+    cost_amount=forms.IntegerField()
